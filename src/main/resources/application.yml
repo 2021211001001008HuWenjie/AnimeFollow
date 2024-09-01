@@ -1,0 +1,33 @@
+server:
+    port: 9090
+    servlet:
+        context-path: /anime
+spring:
+    mvc:
+        static-path-pattern: /**
+    devtools:
+        restart:
+            enabled: true
+            additional-paths: src/main/java
+    datasource:
+        username: root
+        password: 111111
+        url: jdbc:mysql://localhost:3306/anime_manager?zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+        driver-class-name: com.mysql.cj.jdbc.Driver
+#        type: com.alibaba.druid.pool.DruidDataSource
+        initialSize: 5
+        minIdle: 5
+        maxWait: 60000
+mybatis-plus:
+    configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+##server
+#server.port=8080
+##databases
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#spring.datasource.url=jdbc:mysql://localhost:3306/nc_shop?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+#spring.datasource.username=root
+#spring.datasource.password=111111
+
