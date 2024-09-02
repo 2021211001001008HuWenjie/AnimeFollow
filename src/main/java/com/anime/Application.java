@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
-@MapperScan("com.anime")
+@MapperScan("com.anime.mapper")
 public class Application {
 
     public static void main(String[] args) {
